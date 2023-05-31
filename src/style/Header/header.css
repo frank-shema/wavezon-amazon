@@ -1,0 +1,328 @@
+:root {
+    --bg-color: #131921;
+    --light-color: #fff;
+    --size-1: 0.5rem;
+}
+
+header {
+    background-color: var(--bg-color);
+    color: var(--light-color);
+    padding: var(--size-1) 0;
+}
+
+header main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+header main .main-logo {
+    padding: 0 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header main .main-logo img {
+    /* margin: 0.3rem 0.5rem 0 1rem; */
+    /* padding: 0 0.3rem; */
+    width: 100px;
+}
+
+header main .main-logo:hover {
+    /* border: 1px solid #fff;
+    border-radius: 5px; */
+    cursor: pointer;
+}
+
+header main .header-address {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 1rem;
+    padding: 0 0.3rem;
+}
+
+header main .header-address:hover {
+    /* border: 1px solid #fff;
+    border-radius: 5px; */
+    cursor: pointer;
+}
+
+header main .header-address p {
+    margin: 0 0.5rem;
+    font-size: 11px;
+}
+
+header main .header-address article {
+    display: flex;
+    flex-direction: column;
+}
+
+header main .header-search {
+    display: flex;
+}
+
+header main .header-search div:nth-child(1) select {
+    border: none;
+    background-color: #f1f1f1;
+    font-family: 'AmazonEmber';
+    height: 40px;
+    border-radius: 4px 0 0 4px;
+    padding: 0 0.5rem;
+}
+
+header main .header-search div:nth-child(2) input {
+    padding: 0 0.3rem;
+    width: 670px;
+    height: 40px;
+    border: none;
+    font-family: 'AmazonEmber';
+}
+
+header main .header-search div:nth-child(2) input:focus {
+    outline: none;
+}
+
+header main .header-search div:nth-child(3) {
+    cursor: pointer;
+    height: 40px;
+}
+
+header .header-search div:nth-child(3) button {
+    height: 40px;
+    width: 40px;
+    background-color: #febd69;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+header main .header-country {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.3rem;
+    position: relative;
+}
+
+header main .header-country .header-country-choose {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 10;
+    background-color: #fff;
+    color: #333;
+    padding: 0.5rem;
+    border: 1px solid #9999;
+    border-radius: 5px;
+}
+
+header main .header-country .header-country-choose p {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 0.7rem;
+}
+
+header main .header-country .header-country-choose p:last-child {
+    border: none;
+}
+
+header main .header-country .header-country-choose .header-country-choose-link {
+    display: block;
+    margin: 1rem 0 0 0;
+}
+
+header main .header-country .header-country-choose p span {
+    margin: 0 0.3rem;
+}
+
+header main .header-country:hover {
+    /* border: 1px solid #fff;
+    border-radius: 5px; */
+    cursor: pointer;
+}
+
+header main .header-country:hover .header-country-choose {
+    display: inline-block;
+    top: 40px;
+}
+
+header main .header-country p {
+    /* margin: 0 0 0.3rem 0; */
+    font-size: 13px;
+}
+
+
+header main .header-signin {
+    padding: 0 0.3rem;
+    position: relative;
+}
+
+header main .header-signin .header-signin-card {
+    display: none;
+    position: absolute;
+    min-width: 400px;
+    z-index: 10;
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    border: 1px solid #9999;
+    border-radius: 5px;
+}
+
+header main .header-signin .header-signin-card .signin-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header main .header-signin .header-signin-card .signin-btn button {
+    padding: 0.7rem 2.5rem;
+    border: none;
+    background-color: #febd69;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'AmazonEmber';
+}
+
+header main .header-signin .header-signin-card .login-start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 0.5rem 0;
+}
+
+header main .header-signin .header-signin-card .login-start a {
+    margin: 0 0.2rem;
+    color: #05a;
+}
+
+header main .header-country .header-signin-bottom-article .country-flag-m {
+    margin: 0 0.2rem 0 0;
+}
+
+header main .header-signin .header-signin-bottom-article {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+header main .header-signin .header-signin-bottom-article h5 {
+    margin: 0 0.1rem 0 0;
+    font-size: 9px;
+}
+
+header main .header-signin p {
+    font-size: 13px;
+}
+
+header main .header-signin:hover {
+    /* border: 1px solid #fff;
+    border-radius: 5px; */
+    cursor: pointer;
+}
+
+header main .header-signin:hover .header-signin-card {
+    display: block;
+    top: 36px;
+    right: -40px;
+}
+
+header main .header-signin .header-signin-card .login-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+header main .header-signin .header-signin-card .login-content div:nth-child(2) {
+    border-left: 1px solid #f0f0f0;
+    padding: 1rem;
+}
+
+header main .header-signin .header-signin-card .login-content div:nth-child(2) p {
+    margin: 0.5rem 0;
+    font-size: 12px;
+}
+
+header main .header-signin .header-signin-card .login-content div:nth-child(1) {
+    padding: 1rem;
+}
+
+header main .header-signin .header-signin-card .login-content div:nth-child(1) p {
+    margin: 0.5rem 0;
+    font-size: 12px;
+}
+
+header main .header-signin .header-signin-card .login-content div p:hover {
+    color: #febd69;
+    text-decoration: underline;
+}
+
+header main .header-signin .header-signin-card .login-content div p:hover a {
+    color: #febd69 !important;
+    text-decoration: underline;
+}
+
+
+
+header main .header-r-o {
+    margin: 0 1rem;
+    padding: 0 0.3rem;
+}
+
+header main .header-r-o a {
+    color: #fff;
+}
+
+header main .header-r-o p {
+    font-size: 13px;
+}
+
+header main .header-r-o h5 {
+    font-size: 11px;
+}
+
+header main .header-r-o:hover {
+    /* border: 1px solid #fff;
+    border-radius: 5px; */
+    cursor: pointer;
+}
+
+
+header main .header-basket {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 0.3rem;
+}
+
+header main .header-basket-link {
+    color: #fff;
+}
+
+header main .header-basket:hover {
+    /* border: 1px solid #fff;
+    border-radius: 5px; */
+    cursor: pointer;
+}
+
+header main .header-basket .product-count {
+    position: absolute;
+    top: 7px;
+    background-color: #febd69;
+    color: #333;
+    border-radius: 50%;
+    padding: 0.1rem 0.3rem;
+}
+
+/* sm problem */
+/* @media screen and (max-width:1441px){
+    header,header main{
+        display: none !important;
+    }
+} */

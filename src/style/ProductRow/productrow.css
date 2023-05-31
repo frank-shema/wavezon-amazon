@@ -1,0 +1,144 @@
+#independ-product {
+    max-width: 1500px;
+    margin: 16rem auto 0 auto;
+    padding: 2rem;
+}
+
+
+#independ-product aside {
+    color: #333;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+#independ-product aside div {
+    padding: 1rem;
+    background-color: #fff;
+    margin: 0 0.22rem;
+    border-radius: 5px;
+}
+
+#independ-product aside div h4 {
+    font-weight: 900;
+}
+
+#independ-product aside div .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#independ-product aside div .column img {
+    width: 100%;
+    height: 85px;
+}
+
+#independ-product aside div .column img:hover {
+    cursor: pointer;
+}
+
+#independ-product aside div:nth-child(4) .column img {
+    width: 100%;
+    height: 120px;
+}
+
+#independ-product aside div:nth-child(4) .column img:hover {
+    cursor: pointer;
+}
+
+#independ-product aside div .column .column-1,
+#independ-product aside div .column .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#independ-product aside div .column .column-1 p,
+#independ-product aside div .column .column-2 p {
+    font-size: 12px;
+    margin: 1rem;
+}
+
+#independ-product aside .column-single-product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+}
+
+
+#independ-product aside .column-single-product img {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem 0;
+}
+
+#independ-product aside .column-single-product img:hover {
+    cursor: pointer;
+}
+
+#independ-product aside .column-single-product a {
+    font-size: 12px;
+    text-decoration: underline;
+    color: blue;
+}
+
+@media screen and (max-width:1200px) {
+    #independ-product {
+        margin: 0 auto;
+    }
+
+    #independ-product aside {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    #independ-product aside .column-single-product {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #independ-product aside .column-single-product img {
+        width: 100%;
+    }
+
+    #independ-product aside div .column .column-1,
+    #independ-product aside div .column .column-2 {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #independ-product aside div {
+        padding: 0.9rem;
+        margin: 0.5rem 0 !important;
+    }
+
+    #independ-product aside div .column img {
+        width: 100px;
+    }
+
+    #independ-product aside .column-single-product img {
+        width: 100%;
+        height: auto;
+    }
+
+    #independ-product aside div:nth-child(4) .column img {
+        width: 100%;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    #independ-product aside div {
+        padding: 0.7rem;
+        margin: 0;
+    }
+
+    #independ-product aside div:nth-child(4) .column img {
+        width: 100%;
+        height: 120px;
+    }
+}

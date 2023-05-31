@@ -1,0 +1,160 @@
+/* Sub menu */
+
+#sub-menu {
+    background-color: #232f3e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sub-menu ul {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    /* padding: 11px; */
+}
+
+#sub-menu ul li {
+    display: flex;
+    margin: 0 0.5rem;
+    padding: 0.3rem 0.1rem;
+}
+
+
+#sub-menu ul li h4 {
+    margin: 0 0.5rem;
+}
+
+#sub-menu ul li a p {
+    color: #fff;
+}
+
+#sub-menu ul li:hover {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sub-menu ul li p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* SideBar with Overlay */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.3s;
+    margin: 0;
+    color: #333;
+}
+
+.sidenav .side-profile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #232f3e;
+    text-align: center;
+    color: #fff;
+    padding: 0.9rem 0;
+}
+
+.sidenav .side-profile-nav h4 {
+    margin: 0 0.4rem;
+}
+
+.sidenav .side-profile-nav .side-profile-nav-link {
+    color: #fff;
+}
+
+.sidenav .side-content-nav {
+    border-bottom: 1px solid #ccc;
+}
+
+.sidenav .side-content-nav div {
+    margin: 1rem;
+}
+
+.sidenav .side-content-nav h3 {
+    padding: 0.4rem;
+    font-size: 16px;
+}
+
+.sidenav .side-content-nav li {
+    margin: 0.4rem 0;
+    padding: 0.4rem;
+    list-style: none;
+    font-size: 13px;
+}
+
+.sidenav .side-content-nav li:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidenav .side-content-nav-with-arrow {
+    border-bottom: 1px solid #ccc;
+}
+
+.sidenav .side-content-nav-with-arrow div {
+    margin: 1rem;
+}
+
+.sidenav .side-content-nav-with-arrow h3 {
+    padding: 0.4rem;
+    font-size: 16px;
+}
+
+.sidenav .side-content-nav-with-arrow li {
+    margin: 0.4rem 0;
+    padding: 0.4rem;
+    list-style: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidenav .side-content-nav-with-arrow li:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidenav .side-profile-closeNav {
+    width: 100%;
+}
+
+.sidenav .side-profile-closeNav button {
+    width: 100%;
+    background-color: #febd69;
+    border: none;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-family: 'AmazonEmber';
+    cursor: pointer;
+}
+
+.mx-2 {
+    margin: 0 0.5rem;
+}
+
+.display-flex {
+    display: flex;
+    align-items: center;
+}
+
+/* @media screen and (max-width:1441px){
+    #sub-menu{
+        display: none !important;
+    }
+} */
